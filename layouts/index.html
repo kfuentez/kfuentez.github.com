@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="index">
+    {{ partial "nav.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "about.html" . }}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">Published under the Apache License 2.0.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {{ partial "js.html" . }}
+  </body>
+</html>
