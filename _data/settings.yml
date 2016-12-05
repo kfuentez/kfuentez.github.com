@@ -1,0 +1,19 @@
+#-------------------------------
+# General Site Settings
+
+title: Safe Sex
+description:
+email: kelseyfuentez@gmail.com
+baseURL: kfuentez.github.io
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'A tutorial on safe sex'
+  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+
+#-------------------------------

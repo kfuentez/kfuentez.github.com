@@ -1,0 +1,6 @@
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+include: ['_includes/safety']
