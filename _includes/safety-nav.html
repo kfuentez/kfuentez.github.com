@@ -1,0 +1,29 @@
+<!--Side Nav Bar -->
+<nav class="col-md-3 bs-docs-sidebar">
+    <ul id="sidebar" class="nav nav-stacked fixed">
+        <li>
+            <a href="#scenarios" class="smoothScroll">Scenarios</a>
+            <ul class="nav nav-stacked">
+                {% for item in site.data.settings.scenarios-submenu %}
+                <li><a href="{{ item.url }}" class="smoothScroll">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        <li>
+            <a href="#pregnancy" class="smoothScroll">Pregnancy</a>
+            <ul class="nav nav-stacked">
+                {% for item in site.data.settings.pregnancy-submenu %}
+                <li><a href="{{ item.url }}" class="smoothScroll">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        <li>
+            <a href="#stds" class="smoothScroll">STDs</a>
+            <ul class="nav nav-stacked">
+                {% for item in site.data.settings.std-submenu %}
+                <li><a href="{{ item.url }}" class="smoothScroll">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</nav>

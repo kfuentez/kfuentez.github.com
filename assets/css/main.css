@@ -1,8 +1,10 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+ :root {
+   --home-nav-bkgd-color: #E77471;
+   --headings-color: #9a3532;
+   --link-color: #C24641;
+   --link-hover-color: #742825;
+
+ }
 
 body {
     overflow-x: hidden;
@@ -14,7 +16,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: var(--headings-color);
 }
 
 p {
@@ -35,14 +37,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: var(--link-color);
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: var(--link-hover-color);
 }
 
 h1,
@@ -54,6 +56,8 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    text-align: center;
+    color: var(--headings-color);
 }
 
 .img-centered {
@@ -68,13 +72,14 @@ h6 {
     background-color: #222;
 }
 
+/*
 .btn-primary {
     border-color: #fed136;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: var(--link-color);
 }
 
 .btn-primary:hover,
@@ -82,9 +87,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: var(--link-hover-color);
     color: #fff;
-    background-color: #fec503;
+    background-color: var(--link-color);
 }
 
 .btn-primary:active,
@@ -116,6 +121,7 @@ fieldset[disabled] .btn-primary.active {
     color: #fed136;
     background-color: #fff;
 }
+*/
 
 .enter-btn{
     padding: 20px 40px;
@@ -124,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: #fff;
 }
 
 .enter-btn:hover,
@@ -132,7 +138,7 @@ fieldset[disabled] .btn-primary.active {
 .enter-btn:active,
 .enter-btn.active,
 .open .dropdown-toggle.enter-btn{
-    color: black;
+    color: #fff;
 }
 
 .enter-btn:active,
@@ -160,7 +166,7 @@ fieldset[disabled] .enter-btn.active {
 }
 
 .enter-btn.badge {
-    background-color: black;
+    background-color: #fff;
 }
 
 .grow { transition: all .2s ease-in-out; }
@@ -168,19 +174,19 @@ fieldset[disabled] .enter-btn.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: var(--home-nav-bkgd-color);
 }
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: var(--link-color);
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: var(--link-hover-color);
 }
 
 .navbar-brand>img {
@@ -210,8 +216,8 @@ fieldset[disabled] .enter-btn.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: var(--link-color);
+    background-color: var(--link-color);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -220,7 +226,7 @@ fieldset[disabled] .enter-btn.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: var(--link-hover-color);
 }
 
 .navbar-default .nav li a {
@@ -234,26 +240,25 @@ fieldset[disabled] .enter-btn.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: var(--link-color);
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: var(--link-hover-color);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: var(--link-hover-color);
 }
 
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -272,7 +277,7 @@ fieldset[disabled] .enter-btn.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: var(--home-nav-bkgd-color);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -280,10 +285,26 @@ fieldset[disabled] .enter-btn.active {
     }
 }
 
+.scenario-answer:hover,
+.scenario-answer:focus,
+.scenario-answer:active,
+.scenario-answer.active,
+.open .dropdown-toggle.scenario-answer{
+    color: var(--link-color);
+}
+
+.pregnancy-interact:hover,
+.pregnancy-interact:focus,
+.pregnancy-interact:active,
+.pregnancy-interact.active,
+.open .dropdown-toggle.pregnancy-interact{
+    color: var(--link-color);
+}
+
 header {
     padding: 100px 0;
     text-align: center;
-    color: black;
+/*    color: black;*/
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
@@ -291,6 +312,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-color: var(--home-nav-bkgd-color);
 }
 
 header .intro-text {
@@ -304,6 +326,7 @@ header .intro-text {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    color: #fff;
 }
 
 @media(min-width:768px) {
@@ -318,9 +341,31 @@ header .intro-text {
     }
 }
 
-section {
-    padding: 0 0 100px 0;
+#scenarios {
+  margin-bottom: 20px;
 }
+
+section {
+  min-height: 700px;
+}
+
+.section-body {
+  margin-top: 40px;
+}
+
+.section-subtitle {
+  margin-top: 50px;
+}
+
+.section-subody {
+  margin-top: 20px;
+}
+
+/*.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 
 section h2.section-heading {
     padding-top: 50px;
@@ -331,12 +376,12 @@ section h2.section-heading {
 }
 
 @media(min-width:768px) {
-    section {
+    .bottom-section {
         padding: 0 0 150px 0;
     }
 }
 
-.col-lg-4 {
+/*.col-lg-4 {
     padding: 0;
 }
 
@@ -345,9 +390,86 @@ section h2.section-heading {
         padding-left: 100px;
         padding-right: 100px;
     }
-}
+}*/
 
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: var(--link-hover-color);
 }-
+
+
+/* sidebar */
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: var(--link-hover-color);
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: var(--link-hover-color);
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
+}
+
+.fixed {
+    position: fixed;
+}
+.bs-docs-sidebar {
+    padding-left: 20px;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:992px) {
+  .bs-docs-sidebar {
+      display: none;
+  }
+}
+
+.group, .subgroup {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+@media(min-width:992px) {
+  .vcenter {
+    left: 20%;
+  }
+}

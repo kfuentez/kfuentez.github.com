@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html class="">
     {% include head.html %}
-    <body id="page-top" class="index">
-      {% include nav.html %}
+    <body id="home" class="index">
+      {% include index-top-nav.html %}
       {% include hero.html %}
       {% include about.html %}
 
@@ -20,5 +20,17 @@
         </footer>
 
       {% include js.html %}
+      <script>
+      // navbar fade in and out
+      $(document).ready(function(){
+         $(window).scroll(function(){
+             if ($(this).scrollTop() > 200) {
+                 $('.navbar-default').fadeIn(500);
+             } else {
+                 $('.navbar-default').fadeOut(500);
+             }
+         });
+      });
+      </script>
   </body>
 </html>

@@ -6,6 +6,31 @@ description:
 email: kelseyfuentez@gmail.com
 baseURL: kfuentez.github.io
 
+base-menu:
+  - {name: About, url: '#about'}
+  - {name: Safety, url: 'safety'}
+  - {name: Confidence, url: 'confidence'}
+  - {name: Curriculum, url: 'curriculum'}
+  - {name: Credits, url: 'credits'}
+
+safety-menu:
+  - {name: Scenarios, url: '#scenarios'}
+  - {name: Pregnancy, url: '#pregnancy'}
+  - {name: STDs, url: '#stds'}
+
+scenarios-submenu:
+  - {name: Gina, url: '#gina'}
+  - {name: Unwanted Pressure, url: '#unwanted-pressure'}
+  - {name: Get Checked, url: '#get-checked'}
+
+pregnancy-submenu:
+  - {name: Contraceptives, url: '#contraceptives'}
+  - {name: "Plans B, C, And D", url: '#plans'}
+
+std-submenu:
+  - {name: Facts, url: '#std-facts'}
+  - {name: Charts, url: '#std-charts'}
+
 #-------------------------------
 # SEO Section
 
