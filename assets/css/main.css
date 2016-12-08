@@ -310,12 +310,16 @@ fieldset[disabled] .enter-btn.active {
     color: var(--link-color);
 }
 
+.pregnancy-interact {
+  color: var(--link-color);
+}
+
 .pregnancy-interact:hover,
 .pregnancy-interact:focus,
 .pregnancy-interact:active,
 .pregnancy-interact.active,
 .open .dropdown-toggle.pregnancy-interact{
-    color: var(--link-color);
+    color: var(--link-hover-color);
 }
 
 header {
