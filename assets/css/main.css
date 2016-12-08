@@ -322,6 +322,10 @@ fieldset[disabled] .enter-btn.active {
     color: var(--link-hover-color);
 }
 
+.pregnancy-interact-descrip {
+  margin: 10px 0 10px 15px;
+}
+
 header {
     padding: 100px 0;
     text-align: center;
