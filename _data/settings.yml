@@ -6,6 +6,9 @@ description:
 email: kelseyfuentez@gmail.com
 baseURL: kfuentez.github.io
 
+safety-arrow-margin: 5em
+arrow-margin: 16em
+
 base-menu:
   - {name: About, url: '#about'}
   - {name: Safety, url: 'safety'}

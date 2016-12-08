@@ -5,9 +5,9 @@
 <html class="">
     {% include head.html %}
     <body id="confidence">
-      {% include other-top-nav.html %}
-          {% include confidence.html %}
-          {% include confidence-stories.html %}
+      {% include other-top-nav.html currentPage='confidence' %}
+          {% include confidence/confidence.html %}
+          {% include confidence/confidence-stories.html %}
         {% include js.html %}
 
         <script>

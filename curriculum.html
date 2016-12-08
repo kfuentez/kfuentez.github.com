@@ -5,9 +5,9 @@
 <html class="">
     {% include head.html %}
     <body id="curriculum">
-      {% include other-top-nav.html %}
-          {% include curriculum.html %}
-          {% include curriculum-resources.html %}
+      {% include other-top-nav.html currentPage='curriculum' %}
+          {% include curriculum/curriculum.html %}
+          {% include curriculum/curriculum-resources.html %}
         {% include js.html %}
 
         <script>

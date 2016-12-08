@@ -5,17 +5,17 @@
 <html class="">
     {% include head.html %}
     <body id="safety">
-      {% include other-top-nav.html %}
-      {% include safety-nav.html %}
+      {% include other-top-nav.html currentPage='safety' %}
+      {% include safety/safety-nav.html %}
         <div class="col-md-9">
-          {% include safety-home.html %}
-          {% include safety-scenarios.html %}
-          {% include safety-pregnancy.html %}
-          {% include safety-pregnancy-contr.html %}
-          {% include safety-pregnancy-other.html %}
-          {% include safety-std.html %}
-          {% include safety-std-facts.html %}
-          {% include safety-std-charts.html %}
+          {% include safety/safety-home.html %}
+          {% include safety/safety-scenarios.html %}
+          {% include safety/safety-pregnancy.html %}
+          {% include safety/safety-pregnancy-contr.html %}
+          {% include safety/safety-pregnancy-other.html %}
+          {% include safety/safety-std.html %}
+          {% include safety/safety-std-facts.html %}
+          {% include safety/safety-std-charts.html %}
         </div>
         {% include js.html %}
 
