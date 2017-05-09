@@ -1,7 +1,7 @@
 <a href="https://kfuentez.github.io">kfuentez.github.io</a>
 <br/>
 
-To get started you need to do:
+**To get started you need to do:**
 ```
 git clone https://github.com/kfuentez/kfuentez.github.io.git
 cd kfuentez.github.io
@@ -10,7 +10,7 @@ jekyll serve
 
 Then go to <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a> and you're all set.
 
-If you already have the project and aren't sure if you have the most recent version run:
+**If you already have the project and aren't sure if you have the most recent version run:**
 ```
 git checkout master
 git merge --ff-only origin/master
@@ -31,7 +31,7 @@ Any merge conflicts that come up will prompt you to resolve them before that com
 First, rewinding head to replay your work on top of it...
 ```
 
-Once you have made the changes you want to publish you need to do (in the root of the project):
+**Once you have made the changes you want to publish you need to do (in the root of the project):**
 ```
 git add .
 git commit -m '<a message saying what you did>'
